@@ -1,0 +1,9 @@
+name: workflow_dispatch
+
+on: [push]
+    branches: [ main ]
+jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload Python Package
+        uses: actions/checkout@v3
