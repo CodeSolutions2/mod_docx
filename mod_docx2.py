@@ -1,12 +1,7 @@
-import os
-import zipfile
-from lxml import etree
-
 # --------------
 # Purpose
 # --------------
 # The purpose of this library is to serve as a reliable and simple library to reassemble docx documents after they have been treated using AI/machine learning text treatment. Many AI libraries exist that extract text from documents and treat text (ie: translation, similarity of words, sumarization of text, etc), however there lacks robust libraries that automatically reassemble documents in a coherent manner. This library reassembles docx files in a simple manner.
-
 
 
 # --------------
@@ -47,7 +42,6 @@ from lxml import etree
 # Next version will include : simple text search and replacement
 
 
-
 # --------------
 # References: 
 # --------------
@@ -61,6 +55,10 @@ from lxml import etree
 
 
 
+
+import os
+import zipfile
+from lxml import etree
 
 class mod_docx2:
     def __init__(self, filename='', root_dir='', desired_output_docx_name='', doc_finale=''):
