@@ -7,30 +7,44 @@
 # --------------
 # Example: using the package to open and close a file
 # --------------
+# Using PyPI repository 
+# import os
 # import sys
-# sys.path.insert(1, '/location/of/mod_docx2')
-# from mod_docx2 import *
-# ---------------------------------------------
+# sys.path.insert(1, '/usr/lib/python3.11/site-packages')
+
+# import name_of_folder
+# import mod_docx
+
+# from name_of_folder import name_of_file as nickname
+# from mod_docx import mod_docx as mdocx
+
+# --------------------------------------
+
 # [Step 0] Open the docx file as an XML object
-# fpath = "/home/oem2/Documents/PROGRAMMING/Github_analysis_PROJECTS/PYPI/Automatic_CV/data"
+# Obtain the orignal docx file
+# fpath = "/usr/lib/python3.11/site-packages/mod_docx/tests"
 # fichier = "test_document.docx"
-# fichier = "CV_document.docx"
 # docx_filename = os.path.join(fpath, fichier)
         
-# This will change to import mod_docx2
-# md = mod_docx2(docx_filename)
+# Create a class object for the name_of_file.class_name. Use the class object, to call the functions in the class.
+# md = mdocx(docx_filename)
 
-# Convertir le fichier docx originale à XML 
+# Convert the orignal docx file to XML
 # document_org = md.opendocx(docx_filename)
-# ---------------------------------------------
-# [Step 1] Modify the document 
+
+# --------------------------------------
+
+# [Step 1] Modify the document
 # [To be completed for next version] Modify the document as desired (ie: replace text, change style, change font)
 # doc_finale = document_org
-# ---------------------------------------------
-# [Step 2] Save the changed XML document as a docx file 
+
+# --------------------------------------
+
+# [Step 2] Save the changed XML document as a docx file
 # root_dir = f'{fpath}/'
 # desired_output_docx_name = 'test_document_out.docx'
 # md.savedocx_ver_fichier(docx_filename, root_dir, desired_output_docx_name, doc_finale)
+
 # ---------------------------------------------
 
 
@@ -59,8 +73,9 @@
 import os
 import zipfile
 from lxml import etree
+import shutil
 
-class mod_docx2:
+class mod_docx:
     def __init__(self, filename='', root_dir='', desired_output_docx_name='', doc_finale=''):
         self.filename = filename
         self.root_dir = root_dir
@@ -224,6 +239,6 @@ class mod_docx2:
         # -------------------
 
 	# Remove unzip temp folder
-	os.remove(extract_path)
+	shutil.rmtree(extract_path)
 
         return
