@@ -220,5 +220,10 @@ class mod_docx2:
         
         # Enregistez le fichier docx à le reporitoire que vous avez specifié     
         docxfile.close()
+        
+        # -------------------
+
+	# Remove unzip temp folder
+	os.remove(extract_path)
 
         return

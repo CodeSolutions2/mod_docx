@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "modify_docx_package"
+name = "mod_docx"
 version = "0.0.1"
 authors = [
   { name="Jamilah Foucher", email="j622amilah@gmail.com" },
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/DevopsPractice7/modify_docx_package"
-"Bug Tracker" = "https://github.com/DevopsPractice7/modify_docx_package/issues"
+"Homepage" = "https://github.com/DevopsPractice7/mod_docx"
+"Bug Tracker" = "https://github.com/DevopsPractice7/mod_docx/issues"
