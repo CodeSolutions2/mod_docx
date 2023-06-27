@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mod_docx"
-version = "0.0.4"
+version = "0.0.7"
 authors = [
   { name="Jamilah Foucher", email="j622amilah@gmail.com" },
 ]
@@ -13,7 +13,7 @@ readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: GNU License",
+    "License :: OSI Approved :: GPL-3.0 license",
     "Operating System :: OS Independent",
 ]
 
