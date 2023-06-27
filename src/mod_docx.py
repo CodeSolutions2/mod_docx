@@ -237,8 +237,8 @@ class mod_docx:
         docxfile.close()
         
         # -------------------
-
-	# Remove unzip temp folder
-	shutil.rmtree(extract_path)
+        
+        # Remove unzip temp folder
+        shutil.rmtree(extract_path)
 
         return
