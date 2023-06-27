@@ -1,7 +1,7 @@
 # mod_docx
 The purpose of this library is to serve as a reliable and simple library to reassemble docx documents after they have been treated using AI/machine learning text treatment.
 
-At the moment, this library can only open and save/close a docx file; the process of saving/closing a docx file had errors in other libraries. The savedocx_ver_fichier function simply and clearly saves modified text between the <body> tags in XML, with the original style. 
+At the moment, this library can only open and save/close a docx file; the process of saving/closing a docx file had errors in other libraries. The savedocx_ver_fichier function simply and clearly saves modified text between the tags in XML, with the original style.
 
 ## Example of library usage
 import os
