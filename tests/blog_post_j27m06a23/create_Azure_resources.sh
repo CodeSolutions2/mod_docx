@@ -8,13 +8,13 @@
 
 
 # Save your login information to variables, and login by CLI
-# export login=$(echo "j622amilah@gmail.com")   # <username>
+# export login=$(echo "@gmail.com")   # <username>
 # read -sp "Azure password: " password    # <password>
 # az login -u $login -p $password
 
 # ---------------------------------------------
 
-export subscription_id=$(echo "425ecd08-433c-4c16-bcb0-f1ad27233c6d")
+export subscription_id=$(echo "")
 
 az account set -s $subscription_id
 
@@ -47,7 +47,7 @@ export location=$(echo "francecentral")
 
 # ---------------------------------------------
 
-export val=$(echo "X0")
+export val=$(echo "X1")
 
 if [[ $val == "X0" ]]
 then 
@@ -71,7 +71,7 @@ az group list
 # ---------------------------------------------
 
 # Créer Compte de Stockage
-export val=$(echo "X0")
+export val=$(echo "X1")
 
 if [[ $val == "X0" ]]
 then 
@@ -174,7 +174,7 @@ export val=$(echo "X1")
 if [[ $val == "X0" ]]
 then 
     # Il faut etre dans le meme directory que le fichier 
-    cd /home/oem2/Documents/PROGRAMMING/Github_analysis_PROJECTS/Créer_des_questionnaires/Q_Azure
+    cd .../Créer_des_questionnaires/Q_Azure
 
     path_sur_Azure=$(echo "${directoryName}/out0.txt")  # vous mettez le nom de fichier meme s'il n'exist pas sur le serveur
     path_sur_PC_wrt_terminal=$(echo "out0.txt")
@@ -307,7 +307,7 @@ fi
 # ["AnomalyDetector", "CognitiveServices", "ComputerVision", "ContentModerator", "ConversationalLanguageUnderstanding", "CustomVision.Prediction", "CustomVision.Training", "Face", "FormRecognizer", "HealthInsights", "ImmersiveReader", "Internal.AllInOne", "LUIS", "LUIS.Authoring", "LanguageAuthoring", "MetricsAdvisor", "Personalizer", "QnAMaker.v2", "SpeechServices", "TextAnalytics", "TextTranslation"]
 
 
-export val=$(echo "X0")
+export val=$(echo "X1")
 
 if [[ $val == "X0" ]]
 then 
@@ -337,7 +337,7 @@ fi
 
 
 # Nettoyer des resources!
-export val=$(echo "X1")
+export val=$(echo "X0")
 
 if [[ $val == "X0" ]]
 then 
