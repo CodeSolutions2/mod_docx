@@ -16,7 +16,9 @@ classifiers = [
     "License :: OSI Approved :: GNU Affero General Public License v3",
     "Operating System :: OS Independent",
 ]
+#https://pypi.org/classifiers/
 
 [project.urls]
 "Homepage" = "https://github.com/DevopsPractice7/mod_docx"
 "Bug Tracker" = "https://github.com/DevopsPractice7/mod_docx/issues"
+
