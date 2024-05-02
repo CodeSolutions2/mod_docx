@@ -3,6 +3,10 @@ The purpose of this library is to serve as a reliable and simple library to reas
 
 At the moment, this library can only open and save/close a docx file; the process of saving/closing a docx file had errors in other libraries. The savedocx_ver_fichier function simply and clearly saves modified text between the tags in XML, with the original style.
 
+## Download
+
+This library can be downloaded at PyPI: https://pypi.org/project/mod-docx/
+
 ## Example of library usage
 import os
 
